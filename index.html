@@ -1,232 +1,670 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
-  <meta name="description" content="Desarrollamos aplicaciones móviles personalizadas para dispositivos iOS y Android. Creamos soluciones web escalables y adaptadas a la necesidad de cada cliente.">
-  <title>Desarrollo de aplicaciones | Cristopher.cl</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chilean Peso Token - Inversión Inmobiliaria Digital</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIiBmaWxsPSIjMDA3YWZmIj4KICA8Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxNCIgZmlsbD0iIzAwN2FmZiIvPgogIDx0ZXh0IHg9IjE2IiB5PSIyMSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiPkM8L3RleHQ+Cjwvc3ZnPgo=">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1d1d1f;
+            background: #fbfbfd;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(251, 251, 253, 0.8);
+            backdrop-filter: blur(20px);
+            z-index: 100;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #007aff;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #1d1d1f;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #007aff;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 120px 0 80px;
+            text-align: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .hero-content {
+            width: 100%;
+        }
+        
+        .hero h1 {
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #1d1d1f;
+            letter-spacing: -1px;
+        }
+        
+        .hero .subtitle {
+            font-size: 32px;
+            color: #6e6e73;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+        
+        .hero p {
+            font-size: 24px;
+            color: #86868b;
+            max-width: 800px;
+            margin: 0 auto 50px;
+            line-height: 1.4;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 18px 45px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cta-primary {
+            background: #007aff;
+            color: white;
+        }
+        
+        .cta-primary:hover {
+            background: #0056d6;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0, 122, 255, 0.4);
+        }
+        
+        .cta-secondary {
+            background: rgba(255, 255, 255, 0.9);
+            color: #1d1d1f;
+        }
+        
+        .cta-secondary:hover {
+            background: white;
+            transform: translateY(-2px);
+        }
+        
+        /* Stats Section */
+        .stats {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            text-align: center;
+        }
+        
+        .stat-item h3 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #007aff;
+            margin-bottom: 10px;
+        }
+        
+        .stat-item p {
+            font-size: 18px;
+            color: #6e6e73;
+            font-weight: 500;
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 100px 0;
+            background: #f6f6f6;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        
+        .section-title {
+            font-size: 56px;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+        }
+        
+        .section-subtitle {
+            font-size: 24px;
+            color: #6e6e73;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 50px 40px;
+            border-radius: 25px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #007aff, #0056d6);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            font-size: 36px;
+            color: white;
+        }
+        
+        .feature-card h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #1d1d1f;
+        }
+        
+        .feature-card p {
+            color: #6e6e73;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        /* Investment Process */
+        .process {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .process .section-title,
+        .process .section-subtitle {
+            color: white;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 80px;
+        }
+        
+        .step {
+            text-align: center;
+            padding: 30px;
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .step h4 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        
+        .step p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        /* CTA Section */
+        .final-cta {
+            padding: 100px 0;
+            background: white;
+            text-align: center;
+        }
+        
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .cta-content h2 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #1d1d1f;
+        }
+        
+        .cta-content p {
+            font-size: 20px;
+            color: #6e6e73;
+            margin-bottom: 50px;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1d1d1f;
+            color: white;
+            padding: 80px 0 40px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-section h4 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section a {
+            color: #86868b;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: #007aff;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 30px;
+            text-align: center;
+            color: #86868b;
+        }
+        
+        .explorer-link {
+            background: rgba(0, 122, 255, 0.1);
+            color: #007aff;
+            padding: 12px 24px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-block;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .explorer-link:hover {
+            background: rgba(0, 122, 255, 0.2);
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: #1d1d1f;
+            cursor: pointer;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 48px;
+            }
+            
+            .hero .subtitle {
+                font-size: 24px;
+            }
+            
+            .hero p {
+                font-size: 20px;
+            }
+            
+            .section-title {
+                font-size: 36px;
+            }
+            
+            .section-subtitle {
+                font-size: 18px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .features-grid,
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-        <section data-bs-version="5.1" class="menu menu1 cid-sFGzlAXw3z" once="menu" id="menu1-2">
-            <nav class="navbar navbar-dropdown navbar-expand-lg">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <span class="navbar-logo">
-                            <img src="assets/images/logo.png" alt="Logo Cristopher.cl" style="height: 3rem;">
-                        </span>
-                        <span class="navbar-caption-wrap"><a class="navbar-caption text-white text-primary display-7" href="https://cristopher.cl">Cristopher.cl</a></span>
-                    </div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <div class="hamburger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="#top">Inicio</a></li><li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="index.html#features19-a">Nosotros</a></li>
-                            <li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="index.html#features3-b">Servicios</a></li>
-                            </ul>
-                        
-                        <div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="index.html#contacts1-c">Crea tu proyecto con nosotros</a></div>
-                    </div>
-                </div>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">Chilean Peso</a>
+                <ul class="nav-links">
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('about')">Acerca de</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('properties')">Propiedades</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('worldcoin')">Worldchain</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('roadmap')">Roadmap</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('trading')">Trading</a></li>
+                </ul>
+                <button class="mobile-menu-btn">☰</button>
             </nav>
-        </section>
-        <section data-bs-version="5.1" class="header19 cid-sFGzrhlvIh" id="header19-3">
-            <div class="mbr-overlay" style="opacity: 0.9; background-color: rgb(35, 35, 35);">
-            </div>
-            <div class="container">
-                <div class="media-container">
-                    <div class="col-md-12 col-lg-10 m-auto align-center">
-                        <h1 class="mbr-section-title mbr-white mbr-fonts-style mb-3 display-1"><strong>Cristopher.cl<br>Software Agency</strong></h1>
-                        <p class="mbr-text mbr-white mbr-fonts-style display-7">
-                            cristopher.cl es una empresa de desarrollo de software ubicado en Temuco, Araucanía.<br>Ofrecemos servicios de calidad para satisfacer las necesidades <br>de nuestros clientes y así contribuir al éxito de sus proyectos.</p>
-                        <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" href="index.html#features3-b">Servicios</a> <a class="btn btn-secondary display-4" href="index.html#features19-a">Más información</a></div>
-                        <div class="row pt-5 justify-content-center">
-                            <div class="col-12 col-md-6 col-lg-3">
-                                <div class="card-wrapper">
-                                    <div class="card-box align-center">
-                                        <span class="mbr-iconfont mobi-mbri-code mobi-mbri" style="color: rgb(55, 150, 131); fill: rgb(55, 150, 131);"></span>
-                                        <h4 class="card-title align-center mbr-black mbr-fonts-style display-7"><strong>Desarrollo software</strong></h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3">
-                                <div class="card-wrapper">
-                                    <div class="card-box align-center">
-                                        <span class="mbr-iconfont mobi-mbri-apple mobi-mbri" style="color: rgb(55, 150, 131); fill: rgb(55, 150, 131);"></span>
-                                        <h4 class="card-title align-center mbr-black mbr-fonts-style display-7"><strong>Desarrollo aplicaciones</strong></h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3">
-                                <div class="card-wrapper">
-                                    <div class="card-box align-center">
-                                        <span class="mbr-iconfont mobi-mbri-growing-chart mobi-mbri" style="color: rgb(55, 150, 131); fill: rgb(55, 150, 131);"></span>
-                                        <h4 class="card-title align-center mbr-black mbr-fonts-style display-7"><strong>Big data to Analitics</strong></h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3">
-                                <div class="card-wrapper">
-                                    <div class="card-box align-center">
-                                        <span class="mbr-iconfont mobi-mbri-features mobi-mbri" style="color: rgb(55, 150, 131); fill: rgb(55, 150, 131);"></span>
-                                        <h4 class="card-title align-center mbr-black mbr-fonts-style display-7"><strong>Pequeñas aplicaciones</strong></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Chilean Peso</h1>
+                <div class="subtitle">CLP Token</div>
+                <p>La primera criptomoneda anclada al peso chileno para inversión inmobiliaria digital. Democratiza el acceso al mercado inmobiliario chileno y genera rentabilidad constante.</p>
+                <div class="cta-buttons">
+                    <a href="javascript:void(0)" onclick="showPage('about')" class="cta-button cta-primary">Conoce el Proyecto</a>
+                    <a href="javascript:void(0)" onclick="showPage('trading')" class="cta-button cta-secondary">Comenzar Trading</a>
                 </div>
             </div>
-        </section>
-        <section data-bs-version="5.1" class="features15 cid-tAoVRJloDV" id="features16-0">
-            <div class="container">
-                <div class="content-wrapper">
-                    <div class="row align-items-center">
-                        <div class="col-12 col-lg">
-                            <div class="text-wrapper">
-                                <h6 class="card-title mbr-fonts-style display-2">
-                                    <strong>Desarrollo de aplicaciones</strong></h6>
-                                <p class="mbr-text mbr-fonts-style mb-4 display-4">
-                                    Servicio de desarrollo de aplicaciones de software que incluye diseño, programación y pruebas.</p>
-                                <div class="mbr-section-btn mt-3"><a class="btn btn-secondary display-4" href="index.html#contacts1-c">Contáctanos</a></div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="image-wrapper">
-                                <img src="assets/images/photo-1518349619113-03114f06ac3a.jpeg" alt="Pruebas de software">
-                            </div>
-                        </div>
-                    </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>$1M+</h3>
+                    <p>Objetivo de Recaudación</p>
+                </div>
+                <div class="stat-item">
+                    <h3>10+</h3>
+                    <p>Propiedades Objetivo</p>
+                </div>
+                <div class="stat-item">
+                    <h3>8-12%</h3>
+                    <p>Rentabilidad Anual Proyectada</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>Trading Disponible</p>
                 </div>
             </div>
-        </section>
-        <section data-bs-version="5.1" class="features3 cid-sFGGDvi61Z" id="features3-b">
-            <div class="container">
-                <div class="mbr-section-head">
-                    <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Nuestros servicios</strong></h4>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">¿Por qué Chilean Peso Token?</h2>
+                <p class="section-subtitle">Combina la estabilidad del mercado inmobiliario chileno con la innovación blockchain</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏠</div>
+                    <h3>Inversión Real</h3>
+                    <p>Cada token está respaldado por propiedades reales en ubicaciones premium de Chile, generando valor tangible y constante crecimiento.</p>
                 </div>
-                <div class="row mt-4">
-                    <div class="item features-image col-12 col-md-6 col-lg-4">
-                        <div class="item-wrapper">
-                            <div class="item-img">
-                                <img src="assets/images/mbr-5.jpg" alt="Desarrollo de aplicaciones Móviles">
-                            </div>
-                            <div class="item-content">
-                                <h5 class="item-title mbr-fonts-style display-5"><strong>Desarrollo de aplicaciones Móviles</strong></h5>
-                                
-                                <p class="mbr-text mbr-fonts-style mt-3 display-7">Desarrollamos aplicaciones móviles personalizadas para dispositivos iOS y Android.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item features-image col-12 col-md-6 col-lg-4">
-                        <div class="item-wrapper">
-                            <div class="item-img">
-                                <img src="assets/images/mbr-2.jpg" alt="Desarrollo de sistemas web">
-                            </div>
-                            <div class="item-content">
-                                <h5 class="item-title mbr-fonts-style display-5"><strong>Desarrollo de sistemas web</strong></h5>
-                                <p class="mbr-text mbr-fonts-style mt-3 display-7">Creamos soluciones web escalables y adaptadas a la necesidad de cada cliente.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item features-image col-12 col-md-6 col-lg-4">
-                        <div class="item-wrapper">
-                            <div class="item-img">
-                                <img src="assets/images/mbr-1.jpg" alt="Desarrollo de software de escritorio">
-                            </div>
-                            <div class="item-content">
-                                <h5 class="item-title mbr-fonts-style display-5"><strong>Desarrollo de software de escritorio</strong></h5>
-                                <p class="mbr-text mbr-fonts-style mt-3 display-7">Diseñamos software de escritorio seguro, robusto y fácil de usar.&nbsp;<br></p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Rentabilidad Dual</h3>
+                    <p>Genera ingresos tanto por arriendos mensuales como por la plusvalía de las propiedades a largo plazo.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Estabilidad CLP</h3>
+                    <p>Token anclado al peso chileno, ofreciendo estabilidad de moneda local con beneficios de la tecnología blockchain.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Worldchain Network</h3>
+                    <p>Construido en la blockchain más avanzada para identidad humana, garantizando seguridad y autenticidad.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Acceso Digital</div>
+                    <p>Invierte desde cualquier parte del mundo en el mercado inmobiliario chileno de forma simple y transparente.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Trading Flexible</h3>
+                    <p>Intercambia tu CLP por ETH, USD o WLD cuando necesites liquidez, manteniendo flexibilidad total.</p>
                 </div>
             </div>
-        </section>
-        <section data-bs-version="5.1" class="features18 cid-sFGGxz3b6J" id="features19-a">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="card col-12 col-lg">
-                        <div class="card-wrapper">
-                            <h6 class="card-title mbr-fonts-style mb-4 display-2"><strong>Nosotros</strong></h6>
-                            <p class="mbr-text mbr-fonts-style display-7">La experiencia y trayectoria de Cristopher.cl se traducen hoy en destacados proyectos desarrollados con los más altos estándares en Tecnología, Interoperabilidad, Control y Calidad del mercado para que así cientos de empresas comiencen una mejora en sus procesos, con la tranquilidad de contar el respaldo y solidez de una empresa preparada para apoyar en situaciones de contingencia.</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <div class="image-wrapper">
-                            <img src="assets/images/mbr.jpeg" alt="Nosotros">
-                        </div>
-                    </div>
+        </div>
+    </section>
+
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Cómo Funciona</h2>
+                <p class="section-subtitle">Un proceso simple y transparente para generar rentabilidad</p>
+            </div>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Adquiere Tokens</h4>
+                    <p>Compra CLP tokens intercambiando ETH, USD o WLD en nuestra plataforma de trading.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Inversión en Propiedades</h4>
+                    <p>Los fondos se destinan a la compra de propiedades cuidadosamente seleccionadas en Chile.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Generación de Ingresos</h4>
+                    <p>Las propiedades se arriendan generando ingresos mensuales constantes para todos los holders.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h4>Recibe Beneficios</h4>
+                    <p>Obtén tu parte proporcional de las ganancias por arriendos y plusvalía de las propiedades.</p>
                 </div>
             </div>
-        </section>
-        <section data-bs-version="5.1" class="contacts1 cid-sFGJrLtt3K" id="contacts1-c">
-            <div class="container">
-                <div class="mbr-section-head">
-                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Contacto</strong></h3>
-                    <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-5">Cuéntanos sobre tus proyectos digitales, nosotros hacemos el resto.</h4>
-                </div>
-                <div class="row justify-content-center mt-4">
-                    <div class="card col-12 col-lg-6">
-                        <div class="card-wrapper">
-                            <div class="card-box align-center">
-                                <div class="image-wrapper">
-                                    <span class="mbr-iconfont mobi-mbri-letter mobi-mbri"></span>
-                                </div>
-                                <h4 class="card-title mbr-fonts-style mb-2 display-2">
-                                    <strong>Email</strong>
-                                </h4>
-                                <p class="mbr-text mbr-fonts-style mb-2 display-4">Respondemos lo más pronto posible</p>
-                                <h5 class="link mbr-fonts-style display-7"><a href="mailto:hola@cristopher.cl" class="text-primary">Enviar un mensaje</a></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card col-12 col-lg-6">
-                        <div class="card-wrapper">
-                            <div class="card-box align-center">
-                                <div class="image-wrapper">
-                                    <span class="mbr-iconfont mobi-mbri-mobile-2 mobi-mbri"></span>
-                                </div>
-                                <h4 class="card-title mbr-fonts-style align-center mb-2 display-2">
-                                    <strong>Teléfono</strong></h4>
-                                <p class="mbr-text mbr-fonts-style mb-2 display-4">No disponible, preferimos E-Mail</p>
-                                <h5 class="link mbr-black mbr-fonts-style display-7">Pronto disponible</h5>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+    </section>
+
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Únete a la Revolución Inmobiliaria</h2>
+                <p>No pierdas la oportunidad de ser parte del primer token inmobiliario chileno. La fase de recaudación está activa y la primera propiedad se comprará en noviembre 2025.</p>
+                <div class="cta-buttons">
+                    <a href="javascript:void(0)" onclick="showPage('about')" class="cta-button cta-primary">Más Información</a>
+                    <a href="javascript:void(0)" onclick="showPage('trading')" class="cta-button cta-secondary">Empezar Ahora</a>
                 </div>
             </div>
-        </section>
-        <section data-bs-version="5.1" class="footer7 cid-tAYyQnOIwC" once="footers" id="footer7-3">
-            <div class="container">
-                <div class="media-container-row align-center mbr-white">
-                    <div class="col-12">
-                        <p class="mbr-text mb-0 mbr-fonts-style display-7">© Copyright 2023 Cristopher.cl</p>
-                    </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Chilean Peso Token</h4>
+                    <p style="color: #86868b; margin-bottom: 20px;">La primera criptomoneda anclada al peso chileno para inversión inmobiliaria digital.</p>
+                    <a href="https://worldchain-mainnet.explorer.alchemy.com/txs" class="explorer-link" target="_blank">Ver en Worldchain Explorer</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('about')">Acerca de</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('properties')">Propiedades</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('roadmap')">Roadmap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Tecnología</h4>
+                    <ul>
+                        <li><a href="javascript:void(0)" onclick="showPage('worldcoin')">Worldchain</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('trading')">Trading</a></li>
+                        <li><a href="#">Documentación</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Comunidad</h4>
+                    <ul>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Telegram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
                 </div>
             </div>
-        </section>
-        <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/smoothscroll/smooth-scroll.js"></script>
-        <script src="assets/ytplayer/index.js"></script>
-        <script src="assets/dropdown/js/navbar-dropdown.js"></script>
-        <script src="assets/vimeoplayer/player.js"></script>
-        <script src="assets/theme/js/script.js"></script>
-    </body>
+            <div class="footer-bottom">
+                <p>© 2025 Chilean Peso Token. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple page navigation system
+        function showPage(pageName) {
+            alert(`Navegando a la página: ${pageName}\n\nEn una implementación completa, esto cargaría la página correspondiente con información detallada sobre:\n\n- about: Historia del proyecto, equipo, misión\n- properties: Portfolio de propiedades, ubicaciones, ROI\n- worldcoin: Tecnología Worldchain en detalle\n- roadmap: Cronograma detallado y milestones\n- trading: Plataforma de intercambio y herramientas`);
+        }
+
+        // Header background on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(251, 251, 253, 0.95)';
+            } else {
+                header.style.background = 'rgba(251, 251, 253, 0.8)';
+            }
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .stat-item, .step').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            observer.observe(el);
+        });
+
+        // Counter animation for stats
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            const timer = setInterval(() => {
+                start += increment;
+                if (start >= target) {
+                    start = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(start);
+            }, 16);
+        }
+
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
+</body>
 </html>
